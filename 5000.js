@@ -96,7 +96,7 @@ function check() {
       showPrize2.textContent ="🀄 第二週 動滋券(週四)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky98)) {
-      showResult.textContent = "恭喜抽到 第一週 &";
+      showResult.textContent = "恭喜抽到 第一週";
       showPrize.textContent ="🀄 國旅券(週二)";
       showPrize2.textContent ="🀄 藝Fun券-數位(週三)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
