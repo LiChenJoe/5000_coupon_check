@@ -19,7 +19,7 @@ body {
   flex-wrap: wrap;
 }
 h1{
-  font-size: 30px;
+  font-size: 26px;
   position: absolute;
   text-align: center;
   top: -70px
@@ -52,7 +52,7 @@ h1{
 }
 
 .submit{
-    margin-top: 10px;
+    margin-top: 15px;
     width: 50px;
     box-shadow: 0 3px 0px #333;
     border: 1px #777 solid;
