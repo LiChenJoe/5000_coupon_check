@@ -235,9 +235,9 @@ function check() {
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky012)) {
       showResult.textContent = "恭喜抽到 第二週";
-      showPrize.textContent ="🀄 i原券(週二) &";
-      showPrize2.textContent ="🀄 客庄券(週四) ";
-      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+      showPrize.textContent = "🀄 i原券(週二) & ";
+      showPrize2.textContent = "🀄 客庄券(週四) ";
+      showWarn.textContent = "一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky293)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第一週 🀄 動滋券(週四) &";
