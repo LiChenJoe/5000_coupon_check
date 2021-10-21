@@ -37,7 +37,7 @@ function check() {
   let lucky13 = guesson+13;
   let lucky912 = 912;
   let lucky900 = 900;
-  let lucky04 = 04;
+  let lucky04 = guesson+"0"+4;
   let travelW1 = [guesson+21, guesson+32, guesson +98, guesson+67, guesson+97, 410];
   let travelW2 = [ guesson +"0"+4, guesson+87, guesson +40, guesson +29, guesson+71];
   let iCouponW1 = [guesson+64, guesson+85];
