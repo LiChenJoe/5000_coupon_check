@@ -293,7 +293,7 @@ function check() {
     } else if (Number(guess) == Number(travelW2[i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 國旅券(第二週)";
-    } else if (Number(guess) == Number(travelW2[i])) {
+    } else if (Number(guess) == Number(travelW3[i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 國旅券(第三週)";
     } else if (Number(guess) === Number(iCouponW1 [i])) {
@@ -302,7 +302,7 @@ function check() {
     } else if (Number(guess) === Number(iCouponW2 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 i原券(第二週)";
-    } else if (Number(guess) === Number(iCouponW2 [i])) {
+    } else if (Number(guess) === Number(iCouponW3 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 i原券(第三週)";
     } else if (Number(guess) === Number(agriW1 [i])) {
