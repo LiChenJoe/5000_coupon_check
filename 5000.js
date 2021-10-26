@@ -48,9 +48,9 @@ function check() {
   let lucky589 = 589;
   let lucky675 = 675;
   let lucky644 = 644;
-  let Lucky734 =734;
+  let lucky734 =734;
   let lucky335 = 335;
-  let lucky55 = 55;
+  let lucky55 = guesson+55;
   let travelW1 = [guesson+21, guesson+32, guesson +98, guesson+67, guesson+97, 410];
   let travelW2 = [ guesson +"0"+4, guesson+87, guesson +40, guesson +29, guesson+71];
   let travelW3 = [ guesson +"0"+9, guesson+44, guesson +34, guesson +55, guesson+35, 041];
@@ -267,12 +267,12 @@ function check() {
       showPrize.textContent ="第一週 🀄 藝FUN券-紙本(週三)";
       showPrize2.textContent ="第二週 🀄 地方創生券(週五)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
-    } else if (Number(guess) === Number(lucky644)) {
+    } else if (Number(guess) === Number(lucky734)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第一週 🀄 動滋券(週四)";
       showPrize2.textContent ="第三週 🀄 國旅券(週二)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
-    } else if (Number(guess) === Number(lucky734)) {
+    } else if (Number(guess) === Number(lucky644)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第一週 🀄 動滋券(週四)";
       showPrize2.textContent ="第三週 🀄 國旅券(週二)";
