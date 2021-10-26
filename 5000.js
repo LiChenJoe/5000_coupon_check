@@ -47,10 +47,16 @@ function check() {
   let lucky293 = 293;
   let lucky589 = 589;
   let lucky675 = 675;
+  let lucky644 = 644;
+  let Lucky734 =734;
+  let lucky335 = 335;
+  let lucky55 = 55;
   let travelW1 = [guesson+21, guesson+32, guesson +98, guesson+67, guesson+97, 410];
   let travelW2 = [ guesson +"0"+4, guesson+87, guesson +40, guesson +29, guesson+71];
+  let travelW3 = [ guesson +"0"+9, guesson+44, guesson +34, guesson +55, guesson+35, 041];
   let iCouponW1 = [guesson+64, guesson+85];
   let iCouponW2 = [guesson+12, guesson+59];
+  let iCouponW3 = [guesson+48, guesson+49];
   let agriW1 =  [guesson+89, guesson+32, guesson +54, 597, 453, 152];
   let agriW2 =  [guesson+50, guesson+13];
   let funW1Digi =  [guesson+96, guesson+15, guesson +"0"+7, guesson+30, guesson+73, guesson +98,guesson+19, guesson +11];
@@ -261,19 +267,45 @@ function check() {
       showPrize.textContent ="第一週 🀄 藝FUN券-紙本(週三)";
       showPrize2.textContent ="第二週 🀄 地方創生券(週五)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky644)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="第一週 🀄 動滋券(週四)";
+      showPrize2.textContent ="第三週 🀄 國旅券(週二)";
+      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky734)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="第一週 🀄 動滋券(週四)";
+      showPrize2.textContent ="第三週 🀄 國旅券(週二)";
+      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky55)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="第一週 🀄 動滋券(週四)";
+      showPrize2.textContent ="第三週 🀄 國旅券(週二)";
+      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky335)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="第一週 🀄 地方創生券(週五)";
+      showPrize2.textContent ="第三週 🀄 國旅券(週二)";
+      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(travelW1[i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🎁 國旅券(第一週)";
     } else if (Number(guess) == Number(travelW2[i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 國旅券(第二週)";
+    } else if (Number(guess) == Number(travelW2[i])) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent = "🎁 國旅券(第三週)";
     } else if (Number(guess) === Number(iCouponW1 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 i原券(第一週)";
     } else if (Number(guess) === Number(iCouponW2 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 i原券(第二週)";
-    }else if (Number(guess) === Number(agriW1 [i])) {
+    } else if (Number(guess) === Number(iCouponW2 [i])) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent = "🎁 i原券(第三週)";
+    } else if (Number(guess) === Number(agriW1 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 農遊券(第一週)";  
     } else if (Number(guess) === Number(agriW2 [i])) {
