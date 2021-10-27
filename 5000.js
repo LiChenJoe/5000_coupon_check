@@ -291,7 +291,7 @@ function check() {
       showPrize.textContent ="第一週 🀄 藝FUN券-紙本(週三)";
       showPrize2.textContent ="第二週 🀄 地方創生券(週五)";
       showPrize3.textContent ="第三週 🀄 農遊券(週三)";
-      showWarn.textContent ="連三週中籤超級幸運！快去買樂透吧！";
+      showWarn.textContent ="連三週中籤超幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky734)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第一週 🀄 動滋券(週四)";
