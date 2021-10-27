@@ -90,6 +90,7 @@ function check() {
     showPrize.textContent = "";
     showWarn.textContent ="";
     showPrize2.textContent = "";
+    showPrize3.textContent = "";
     if (guess === "") {
       showResult.textContent = "";
       showPrize.textContent = "";
