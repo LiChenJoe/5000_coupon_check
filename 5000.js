@@ -236,15 +236,15 @@ function check() {
       showPrize.textContent ="🀄 第一週 地方創生券(週五)"
       showPrize2.textContent ="🀄 第二週 i原券(週二)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
-    } else if (Number(guess) === Number(lucky00)) {
-      showResult.textContent = "恭喜抽到";
-      showPrize.textContent ="🀄 第二週 藝FUN券-數位(週三)";
-      showPrize2.textContent ="🀄 第三週 藝FUN券-紙本(週三)";
-      showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky900)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 客庄券(週四)";
       showPrize2.textContent ="🀄 第二、三週 藝FUN券-數位＆紙本(週三)";
+      showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+    } else if (Number(guess) === Number(lucky00)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第二週 藝FUN券-數位(週三)";
+      showPrize2.textContent ="🀄 第三週 藝FUN券-紙本(週三)";
       showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky04)) {
       showResult.textContent = "恭喜抽到 第二週";
