@@ -78,7 +78,7 @@ function check() {
   let funW1Paper =  [guesson+39, guesson+37, guesson +23, guesson+36, guesson+79, guesson +"0"+8,guesson+14, guesson +75];
   let funW2Digi =   [guesson+78, guesson+"0"+"0", guesson +39, guesson+22, guesson+61, guesson +23,guesson+15];
   let funW2Paper =   [guesson+37, guesson+76, guesson +31, guesson+"0"+6, guesson +51,guesson+65, guesson +81];
-  let funW3Digi =   [guesson+"0"+1, guesson+92, guesson +19, guesson+23, guesson+79, guesson +95,guesson+48];
+  let funW3Digi =   [guesson+"0"+1, guesson+92, guesson +19, guesson+23, guesson+79, guesson +95,guesson+48,,guesson+46];
   let funW3Paper =   [guesson+"0"+"0", guesson+31, guesson +56, guesson+"0"+2, guesson +52,guesson+44, guesson +49, guesson +47, guesson +59];
   let moveW1 =  [guesson+97, guesson+13, guesson +19, guesson+55, guesson+71, guesson +93,381, 734, 644, 453, 985];
   let moveW2 =  [guesson+91, guesson+11, guesson +"0"+4, guesson+18, guesson+57, 498, 756];
@@ -316,7 +316,7 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第一週 🀄 藝FUN券-紙本(週三) ";
       showPrize2.textContent ="第三週 🀄 藝FUN券-數位(週三) ";
-      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+      showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky00)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第一週 🀄 藝FUN券-紙本(週三) ";
