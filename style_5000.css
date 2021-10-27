@@ -73,7 +73,7 @@ h1{
 .showResult{
   text-align: left;
 }
-.showPrize,.showPrize2,.showWarn{
+.showPrize,.showPrize2,.showPrize3,.showWarn{
    margin: auto;
    text-align: center;
 }

@@ -94,7 +94,7 @@ function check() {
       showResult.textContent = "";
       showPrize.textContent = "";
       showPrize2.textContent = "";
-      showPrize2.textContent = "";
+      showPrize3.textContent = "";
       showWarn.textContent =  "⚠️ "+"  請輸入身分證後三碼⚠️ ";
     } 
   
@@ -290,7 +290,7 @@ function check() {
       showPrize.textContent ="第一週 🀄 藝FUN券-紙本(週三)";
       showPrize2.textContent ="第二週 🀄 地方創生券(週五)";
       showPrize3.textContent ="第三週 🀄 農遊券(週三)";
-      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+      showWarn.textContent ="連三週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky734)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第一週 🀄 動滋券(週四)";
@@ -400,7 +400,7 @@ function check() {
     } else if (Number(guess) === Number(agriW2 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 農遊券(第二週)";
-    } else if (Number(guess) === Number(agriW2 [i])) {
+    } else if (Number(guess) === Number(agriW3 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 農遊券(第三週)";
     } else if (Number(guess) === Number(funW1Digi [i])) {
@@ -415,10 +415,10 @@ function check() {
     } else if (Number(guess) === Number(funW2Paper [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 藝Fun券-紙本(第二週)";
-    } else if (Number(guess) === Number(funW2Digi [i])) {
+    } else if (Number(guess) === Number(funW3Digi [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 藝Fun券-數位(第三週)";  
-    } else if (Number(guess) === Number(funW2Paper [i])) {
+    } else if (Number(guess) === Number(funW3Paper [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 藝Fun券-紙本(第三週)";
     } else if (Number(guess) === Number(moveW1 [i])) {
