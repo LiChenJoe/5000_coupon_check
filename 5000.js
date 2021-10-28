@@ -246,7 +246,7 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 客庄券(週四)";
       showPrize2.textContent ="🀄 第二、三週 藝FUN券-數位＆紙本(週三)";
-      showPrize3.textContent ="🀄 第二、三週 藝FUN券-數位＆紙本(週三)";
+      showPrize3.textContent ="🀄 第三週 動滋券(週四)";
       showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky00)) {
       showResult.textContent = "恭喜抽到";
