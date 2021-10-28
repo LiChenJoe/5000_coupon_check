@@ -400,7 +400,7 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 藝FUN券-紙本(週三)";
       showPrize2.textContent ="🀄 第三週 動滋券(週四)";
-      showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky57)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 動滋券(週四)";
