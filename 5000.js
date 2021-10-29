@@ -445,11 +445,6 @@ function check() {
       showPrize.textContent ="🀄 第二週 i原券(週二) ";
       showPrize2.textContent ="🀄 第三週 藝FUN券-紙本(週三) & 地方創生券(週五)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    } else if (Number(guess) === Number(lucky135)) {
-      showResult.textContent = "恭喜抽到 第三週 ";
-      showPrize2.textContent ="🀄 國旅券(週二)";
-      showPrize2.textContent ="🀄 地方創生券(週五)";
-      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky314)) {
       showResult.textContent = "恭喜抽到 第三週 ";
       showPrize2.textContent ="🀄 客庄券(週四)";
