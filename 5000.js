@@ -329,10 +329,10 @@ function check() {
       showPrize.textContent ="🀄 第一週 地方創生券(週五)";
       showPrize2.textContent ="🀄 第三週 國旅券(週二)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
-    } else if (Number(guess) === Number(lucky335)) {
-      showResult.textContent = "恭喜抽到";
-      showPrize.textContent ="🀄 第一週 地方創生券(週五)";
-      showPrize2.textContent ="🀄 第三週 國旅券(週二)";
+    } else if (Number(guess) === Number(lucky135)) {
+      showResult.textContent = "恭喜抽到 第三週 ";
+      showPrize.textContent ="🀄 國旅券(週二)";
+      showPrize2.textContent ="🀄 地方創生券(週五)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky79)) {
       showResult.textContent = "恭喜抽到";
