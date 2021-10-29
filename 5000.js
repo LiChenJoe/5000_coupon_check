@@ -71,7 +71,7 @@ function check() {
   let lucky546 = 546;
   let lucky771 = 771;
   let lucky706 = 706;
-  let lucky064 = "0"＋64;
+  let lucky064 = "0"+64;
   let lucky191 = 191;
   let lucky459 = 459;
   let lucky135 = 135;
