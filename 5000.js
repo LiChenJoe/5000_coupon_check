@@ -265,15 +265,15 @@ function check() {
       showPrize2.textContent ="🀄 第二週 藝FUN券-數位(週三)";
       showPrize3.textContent ="🀄 第三週 藝FUN券-紙本(週三) & 動滋券(週四)";
       showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    } else if (Number(guess) === Number(lucky00))
+    } else if (Number(guess) === Number(lucky00)){
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 藝FUN券-數位(週三)";
       showPrize2.textContent ="🀄 第三週 藝FUN券-紙本(週三) & 動滋券(週四)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky04)) {
       showResult.textContent = "恭喜抽到 第二週";
-      showPrize.textContent ="🀄 國旅券(週二) &";
-      showPrize2.textContent ="🀄 動滋券(週四) ";
+      showPrize.textContent = "🀄 國旅券(週二) &";
+      showPrize2.textContent = "🀄 動滋券(週四) ";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky439)) {
       showResult.textContent = "恭喜抽到";
