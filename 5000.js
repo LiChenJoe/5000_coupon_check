@@ -578,3 +578,6 @@ function check() {
     }
 } 
 }
+submit.addEventListener("click", check);
+
+
