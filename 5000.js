@@ -83,7 +83,6 @@ function check() {
   let lucky93 = guesson+93;
   let lucky82 = guesson+82;
   let lucky29 = guesson+29;
-  let lucky29 = guesson+29;
   let lucky315 = 315;
   let lucky015 = 015;
   let lucky264 = 264;
