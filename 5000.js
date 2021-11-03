@@ -94,6 +94,7 @@ function check() {
   let agriW1 =  [guesson+89, guesson+32, guesson +54, 597, 453, 152];
   let agriW2 =  [guesson+50, guesson+13];
   let agriW3 =  [guesson+60, guesson+75];
+  let agriW4 =  [315, 740, 381, 264, 285, 765, 682, 763, 373, 015, 374];
   let funW1Digi =  [guesson+96, guesson+15, guesson +"0"+7, guesson+30, guesson+73, guesson +98,guesson+19, guesson +11];
   let funW1Paper =  [guesson+39, guesson+37, guesson +23, guesson+36, guesson+79, guesson +"0"+8,guesson+14, guesson +75];
   let funW2Digi =   [guesson+78, guesson+"0"+"0", guesson +39, guesson+22, guesson+61, guesson +23,guesson+15];
@@ -210,7 +211,8 @@ function check() {
       showResult.textContent = "恭喜抽到 ";
       showPrize.textContent ="🀄 第一週(週四) 動滋券 & 客庄券";
       showPrize2.textContent ="🀄 第二週 藝FUN券-紙本(週三)";
-      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+      showPrize3.textContent ="🀄 第四週 農遊券(週三)";
+      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     }else if (Number(guess) === Number(lucky081)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 客庄券(週四) & 地方創生券(週五)";
@@ -525,6 +527,9 @@ function check() {
     } else if (Number(guess) === Number(agriW3 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 農遊券(第三週)";
+    } else if (Number(guess) === Number(agriW4 [i])) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent = "🎁 農遊券(第四週)";
     } else if (Number(guess) === Number(funW1Digi [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 藝Fun券-數位(第一週)";  
@@ -573,5 +578,3 @@ function check() {
     }
 } 
 }
-submit.addEventListener("click", check);
-result.style.fontSize = "13px";
