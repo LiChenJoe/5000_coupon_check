@@ -4,6 +4,7 @@ let showResult= document.querySelector(".showResult");
 let showPrize= document.querySelector(".showPrize");
 let showPrize2= document.querySelector(".showPrize2"); 
 let showPrize3= document.querySelector(".showPrize3"); 
+let showPrize4= document.querySelector(".showPrize4"); 
 let showNumber= document.querySelector(".showNumber");
 let showWarn= document.querySelector(".showWarn");
 const submit = document.querySelector(".submit");
@@ -91,6 +92,16 @@ function check() {
   let lucky765 = 765;
   let lucky682 = 682;
   let lucky373 = 373;
+  let lucky188 = 188;
+  let lucky61 = guesson+61;
+  let lucky85 = guesson+85;
+  let lucky67 = guesson+67;
+  let lucky56 = guesson+56;
+  let lucky34 = guesson+34;
+  let lucky35 = guesson+35;
+  let lucky30 = guesson+30;
+  let lucky51 = guesson+51;
+  let lucky07 = guesson +"0"+7
   let travelW1 = [guesson+21, guesson+32, guesson +98, guesson+67, guesson+97, 410];
   let travelW2 = [ guesson +"0"+4, guesson+87, guesson +40, guesson +29, guesson+71];
   let travelW3 = [ guesson +"0"+9, guesson+44, guesson +34, guesson +55, guesson+35, 041];
@@ -107,11 +118,14 @@ function check() {
   let funW1Paper =  [guesson+39, guesson+37, guesson +23, guesson+36, guesson+79, guesson +"0"+8,guesson+14, guesson +75];
   let funW2Digi =   [guesson+78, guesson+"0"+"0", guesson +39, guesson+22, guesson+61, guesson +23,guesson+15];
   let funW2Paper =   [guesson+37, guesson+76, guesson +31, guesson+"0"+6, guesson +51,guesson+65, guesson +81];
-  let funW3Digi =   [guesson+"0"+1, guesson+92, guesson +19, guesson+23, guesson+79, guesson +95,guesson+48,,guesson+46];
+  let funW3Digi =   [guesson+"0"+1, guesson+92, guesson +19, guesson+23, guesson+79, guesson +95,guesson+48,guesson+46];
   let funW3Paper =   [guesson+"0"+"0", guesson+31, guesson +56, guesson+"0"+2, guesson +52,guesson+44, guesson +49, guesson +47, guesson +59];
+  let funW4Digi =   [guesson+70, guesson+61, guesson +37, guesson+85, guesson +67,guesson+35, guesson +44];
+  let funW4Paper =   [guesson+75, guesson+72, guesson +71, guesson+28, guesson+67, guesson +82,guesson+93,guesson+56,guesson+34,guesson +"0"+7];
   let moveW1 =  [guesson+97, guesson+13, guesson +19, guesson+55, guesson+71, guesson +93,381, 734, 644, 453, 985];
   let moveW2 =  [guesson+91, guesson+11, guesson +"0"+4, guesson+18, guesson+57, 498, 756];
   let moveW3 =  [guesson+82, guesson+45, guesson +"0"+"0", guesson+57, guesson+53, 546, 855, 865, 012, 983];
+  let moveW4 =  [guesson+30, guesson +"0"+"3", guesson+51,guesson+88];
   let hakaW1 =  [guesson+81, 900];
   let hakaW2 =  [841, 052, 205, 446];
   let hakaW3 =  [guesson+14, 269];
@@ -123,11 +137,13 @@ function check() {
     showWarn.textContent ="";
     showPrize2.textContent = "";
     showPrize3.textContent = "";
+    showPrize4.textContent = "";    
     if (guess === "") {
       showResult.textContent = "";
       showPrize.textContent = "";
       showPrize2.textContent = "";
       showPrize3.textContent = "";
+    showPrize4.textContent = "";      
       showWarn.textContent =  "⚠️ "+"  請輸入身分證後三碼⚠️ ";
     } 
   
@@ -180,48 +196,49 @@ function check() {
       showPrize.textContent ="🀄 國旅券(週二) & 農遊券(週三) &";
       showPrize2.textContent ="🀄  動滋券(週四)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    }else if (Number(guess) === Number(lucky97)) {
+    } else if (Number(guess) === Number(lucky97)) {
       showResult.textContent = "恭喜抽到 第一週 ";
       showPrize.textContent ="🀄 國旅券(週二) &";
       showPrize2.textContent ="🀄 動滋券(週四)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    }else if (Number(guess) === Number(lucky985)) {
+    } else if (Number(guess) === Number(lucky985)) {
       showResult.textContent = "恭喜抽到 第一週 ";
-      showPrize.textContent ="🀄 i原券(週二) &";
-      showPrize2.textContent ="🀄 動滋券(週四)";
+      showPrize.textContent ="🀄 第一週 i原券(週二) &";
+      showPrize2.textContent ="🀄 第一週 動滋券(週四)";
+      showPrize3.textContent ="🀄 第四週 藝Fun券-數位(週三)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     }else if (Number(guess) === Number(lucky521)) {
       showResult.textContent = "恭喜抽到 第一週 ";
       showPrize.textContent ="🀄 國旅券(週二) &";
       showPrize2.textContent ="🀄 地方創生券(週五)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    }else if (Number(guess) === Number(lucky467)) {
-      showResult.textContent = "恭喜抽到 第一週 ";
-      showPrize.textContent ="🀄 國旅券(週二) &";
-      showPrize2.textContent ="🀄 地方創生券(週五)";
+    } else if (Number(guess) === Number(lucky367)) {
+      showResult.textContent = "恭喜抽到 ";
+      showPrize.textContent ="🀄 第一週 國旅券(週二) & 地方創生券(週五)";
+      showPrize2.textContent ="🀄 第四週 藝Fun券-數位 & 紙本(週三)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    }else if (Number(guess) === Number(lucky367)) {
+    } else if (Number(guess) === Number(lucky467)) {
       showResult.textContent = "恭喜抽到 第一週 ";
-      showPrize.textContent ="🀄 國旅券(週二) &";
-      showPrize2.textContent ="🀄 地方創生券(週五)";
+      showPrize.textContent ="🀄 第一週 國旅券(週二) & 地方創生券(週五)";
+      showPrize2.textContent ="🀄 第四週 藝Fun券-數位 & 紙本(週三)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    }else if (Number(guess) === Number(lucky089)) {
+    } else if (Number(guess) === Number(lucky089)) {
       showResult.textContent = "恭喜抽到 第一週 ";
       showPrize.textContent ="🀄 農遊券(週三) &";
       showPrize2.textContent ="🀄 地方創生券(週五)";
       showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    }else if (Number(guess) === Number(lucky453)) {
+    } else if (Number(guess) === Number(lucky453)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 農遊券(週三) & 動滋券(週四)";
       showPrize2.textContent ="🀄 第三週 動滋券(週四)";
       showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
-    }else if (Number(guess) === Number(lucky381)) {
+    } else if (Number(guess) === Number(lucky381)) {
       showResult.textContent = "恭喜抽到 ";
       showPrize.textContent ="🀄 第一週(週四) 動滋券 & 客庄券";
       showPrize2.textContent ="🀄 第二週 藝FUN券-紙本(週三)";
       showPrize3.textContent ="🀄 第四週 農遊券(週三)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
-    }else if (Number(guess) === Number(lucky081)) {
+    } else if (Number(guess) === Number(lucky081)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 客庄券(週四) & 地方創生券(週五)";
       showPrize2.textContent ="🀄 第二週 藝FUN券-紙本(週三)";
@@ -257,6 +274,7 @@ function check() {
       showResult.textContent = "恭喜抽到 ";
       showPrize.textContent ="🀄 第一週 藝FUN券-紙本(週三)";
       showPrize2.textContent ="🀄 第二週 藝FUN券-數位(週三)";
+      showPrize3.textContent ="🀄 第四週 藝FUN券-數位(週三)";
       showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky39)) {
       showResult.textContent = "恭喜抽到";
@@ -272,13 +290,13 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 動滋券(週四)";
       showPrize2.textContent ="🀄 第二週 國旅券(週二) & 地方創生券(週五)";
-      showPrize3.textContent ="🀄 第四週 i原券(週二)";
-      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+      showPrize3.textContent ="🀄 第四週 i原券(週二) & 藝FUN券-紙本(週三)";
+      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky71)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 動滋券(週四)";
       showPrize2.textContent ="🀄 第二週 國旅券(週二)";
-      showPrize3.textContent ="🀄 第四週 i原券(週二)";
+      showPrize3.textContent ="🀄 第四週 i原券(週二) ＆ 藝FUN券-紙本(週三)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky13)) {
       showResult.textContent = "恭喜抽到";
@@ -335,8 +353,8 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 動滋券(週四)";
       showPrize2.textContent ="🀄 第二週 客庄券(週四)";
-      showPrize3.textContent ="🀄 第四週 國旅券(週二)";
-      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+      showPrize3.textContent ="🀄 第四週 國旅券(週二) & 藝FUN券-紙本(週三)";
+      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky589)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 農遊券(週三)";
@@ -347,18 +365,21 @@ function check() {
       showPrize.textContent ="🀄 第一週 藝FUN券-紙本(週三)";
       showPrize2.textContent ="🀄 第二週 地方創生券(週五)";
       showPrize3.textContent ="🀄 第三週 農遊券(週三)";
-      showWarn.textContent ="連三週中籤超幸運！快去買樂透吧！";
+      showPrize4.textContent ="🀄 第四週 藝FUN券-紙本(週三)";
+      showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky734)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 動滋券(週四)";
       showPrize2.textContent ="🀄 第三週 國旅券(週二)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-紙本(週三)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky644)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 動滋券(週四)";
       showPrize2.textContent ="🀄 第三週 國旅券(週二)";
       showPrize3.textContent ="🀄 第三週 藝FUN券-紙本(週三)";
-      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+      showPrize4.textContent ="🀄 第四週 藝FUN券-數位(週三)";
+      showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky55)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 動滋券(週四)";
@@ -368,12 +389,18 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 地方創生券(週五)";
       showPrize2.textContent ="🀄 第三週 國旅券(週二)";
+      showPrize3.textContent ="🀄 第四週 藝FUN券-數位(週三)";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky135)) {
-      showResult.textContent = "恭喜抽到 第三週 ";
-      showPrize.textContent ="🀄 國旅券(週二) ＆";
-      showPrize2.textContent ="🀄 地方創生券(週五)";
-      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第三週 國旅券(週二) ＆ 地方創生券(週五)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-數位(週三)";
+      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+    } else if (Number(guess) === Number(lucky35)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第三週 國旅券(週二)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-數位(週三)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky79)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 藝FUN券-紙本(週三) ";
@@ -386,9 +413,10 @@ function check() {
       showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky44)) {
       showResult.textContent = "恭喜抽到 第三週";
-      showPrize.textContent ="🀄 國旅券(週二) &";
-      showPrize2.textContent ="🀄 藝FUN券-紙本(週三) ";
-      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+      showPrize.textContent ="🀄 第三週 國旅券(週二) &";
+      showPrize2.textContent ="🀄 第三週 藝FUN券-紙本(週三) ";
+      showPrize3.textContent ="🀄 第四週 藝FUN券-數位(週三) ";
+      showWarn.textContent ="每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky48)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 i原券(週二) ";
@@ -403,6 +431,7 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 藝FUN券-紙本(週三)";
       showPrize2.textContent ="🀄 第三週 農遊券(週三) ";
+      showPrize3.textContent ="🀄 第四週 藝FUN券-紙本(週三) ";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky459)) {
       showResult.textContent = "恭喜抽到";
@@ -418,6 +447,7 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="第二週 動滋券(週四) ";
       showPrize2.textContent ="第三週 藝FUN券-紙本(週三) ";
+      showPrize3.textContent ="第三週 藝FUN券-紙本(週三) ";
       showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(lucky456)) {
       showResult.textContent = "恭喜抽到";
@@ -502,8 +532,8 @@ function check() {
     } else if (Number(guess) === Number(lucky93)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 動滋券(週四)";
-      showPrize2.textContent ="🀄 第四週 國旅券(週二)";
-      showWarn.textContent ="跨週中籤超級幸運！快去買樂透吧！";
+      showPrize2.textContent ="🀄 第四週 國旅券(週二) & 藝FUN券-紙本(週三)";
+      showWarn.textContent ="一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky29)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 國旅券(週二)";
@@ -513,12 +543,13 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 動滋券(週四)";
       showPrize2.textContent ="🀄 第四週(週二) 國旅券 & i原券";
-      showPrize3.textContent ="🀄 第四週 農遊券(週三)";
+      showPrize3.textContent ="🀄 第四週 農遊券(週三) & 藝FUN券-紙本(週三)";
       showWarn.textContent = "一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky82)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 動滋券(週四)";
       showPrize2.textContent ="🀄 第四週(週二) 國旅券 & i原券";
+      showPrize3.textContent ="🀄 第四週 藝FUN券-紙本(週三)";
       showWarn.textContent = "一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky264)) {
       showResult.textContent = "恭喜抽到";
@@ -533,8 +564,8 @@ function check() {
     } else if (Number(guess) === Number(lucky285)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第一週 i原券(週二) ";
-      showPrize2.textContent ="🀄 第四週 農遊券(週二)";
-      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+      showPrize2.textContent ="🀄 第四週 農遊券(週二) & 藝FUN券-數位(週三)";
+      showWarn.textContent = "一週僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
     } else if (Number(guess) === Number(lucky765)) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 藝FUN券-紙本(週三)";
@@ -544,6 +575,51 @@ function check() {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent ="🀄 第二週 藝FUN券-數位(週三)";
       showPrize2.textContent ="🀄 第四週 農遊券(週二)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky85)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第一週 i原券(週二)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-數位(週三)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky61)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第二週 藝FUN券-數位(週三)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-數位(週三)";
+      showWarn.textContent = "每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+    } else if (Number(guess) === Number(lucky34)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第三週 國旅券(週二)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-紙本(週三)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky56)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第三週 藝FUN券-紙本(週三)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-紙本(週三)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky67)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第一週 國旅券(週二)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-紙本(週三)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky07)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第一週 藝FUN券-數位(週三)";
+      showPrize2.textContent ="🀄 第四週 藝FUN券-紙本(週三)";
+      showWarn.textContent = "每種券別僅能中籤一次，實際中獎內容，請依官方簡訊為主。";
+    } else if (Number(guess) === Number(lucky30)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第一週 藝FUN券-數位(週三)";
+      showPrize2.textContent ="🀄 第四週 動滋券(週四)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky51)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第二週 藝FUN券-紙本(週三)";
+      showPrize2.textContent ="🀄 第四週 動滋券(週四)";
+      showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
+    } else if (Number(guess) === Number(lucky188)) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent ="🀄 第一週 地方創生券(週五)";
+      showPrize2.textContent ="🀄 第四週 動滋券(週四)";
       showWarn.textContent = "跨週中籤超級幸運！快去買樂透吧！";
     } else if (Number(guess) === Number(travelW1[i])) {
       showResult.textContent = "恭喜抽到";
@@ -599,6 +675,12 @@ function check() {
     } else if (Number(guess) === Number(funW3Paper [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 藝Fun券-紙本(第三週)";
+    } else if (Number(guess) === Number(funW4Digi [i])) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent = "🎁 藝Fun券-數位(第四週)";  
+    } else if (Number(guess) === Number(funW4Paper [i])) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent = "🎁 藝Fun券-紙本(第四週)";
     } else if (Number(guess) === Number(moveW1 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 動滋券(第一週)";
@@ -608,6 +690,9 @@ function check() {
     } else if (Number(guess) === Number(moveW3 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 動滋券(第三週)";
+    } else if (Number(guess) === Number(moveW4 [i])) {
+      showResult.textContent = "恭喜抽到";
+      showPrize.textContent = "🎁 動滋券(第四週)";
     } else if (Number(guess) === Number(hakaW1 [i])) {
       showResult.textContent = "恭喜抽到";
       showPrize.textContent = "🎁 客庄券(第一週)";

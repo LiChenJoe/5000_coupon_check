@@ -65,15 +65,16 @@ h1{
   transform: translateY(0px);
 }
 
-
 .respond{
   width: 200px;
   font-size: 14px;
 }
 .showResult{
+  margin:5px 0 10px 0;
   text-align: left;
 }
-.showPrize,.showPrize2,.showPrize3,.showWarn{
+
+.result>p{
    margin: auto;
    text-align: center;
 }
